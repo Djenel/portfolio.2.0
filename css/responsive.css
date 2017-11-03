@@ -1,0 +1,25 @@
+/*/////////////////////////////
+-----------STRUCTURE----------
+////////////////////////////*/
+
+@media screen and (max-width: 768px){
+    .xs-none{display: none;}
+    li a .border:after{
+    border-top: 2px solid black!important;
+    transition: all .15s ease-in-out;
+}
+
+}
+
+@media screen and (min-width: 768px){
+    .sm-none{display: none;}
+
+}
+
+@media screen and (min-width: 992px){
+    .md-none{display: none;}
+}
+
+@media screen and (min-width: 1170px){
+    .lg-none{display: none;}
+}
