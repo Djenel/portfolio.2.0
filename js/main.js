@@ -54,7 +54,7 @@ $(function(){
 ------ANIMATION ACCUEIL-------
 ////////////////////////////*/
 
-    TweenMax.to('.line-separator',1,{delay:0.5, width:'100%', opacity:1, left:0 });
+    TweenMax.to('.line-separator',1,{delay:0.5, width:'100%', opacity:1, left:0,  });
     TweenMax.to('#blc-title h1',1.5,{delay:1.5, scale:1.03, opacity:1});
     TweenMax.to('#blc-title h3',1.5,{delay:1.5, scale:1.03, opacity:1});
     TweenMax.to('.bg-gradient1',6,{scale:1.5, delay:1, repeat:-1, yoyo:true, rotation:15, ease:Linear.easeOut});
