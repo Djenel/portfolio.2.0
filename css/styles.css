@@ -364,10 +364,10 @@ footer{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  -webkit-filter: blur(40px);
-  -moz-filter: blur(40px);
-  -o-filter: blur(40px);
-  filter: blur(40px);
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -o-filter: blur(30px);
+  filter: blur(30px);
   float:left;
 }
 
@@ -380,14 +380,25 @@ footer{
 #blc-profil {
     position: absolute;
     width: 80%;
-    height: 500px;
+    height: 600px;
     top: 50%;
     left: 50%;
     margin-left: -40%;
-    margin-top: -250px;
+    margin-top: -300px;
     background-color: rgba(255, 255, 255, 0.52);
     z-index: 100;
-    box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.4);
+    box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
+    opacity: 0;
+}
+
+.btn-cv {
+    width: 200px;
+    padding: 12px 0;
+    font-size: 0.9em;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #7d7d7d;
 }
 
 
