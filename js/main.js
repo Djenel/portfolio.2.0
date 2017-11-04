@@ -59,4 +59,8 @@ $(function(){
     TweenMax.to('#blc-title h3',1.5,{delay:1.5, scale:1.03, opacity:1});
     TweenMax.to('.bg-gradient1',6,{scale:1.5, delay:1, repeat:-1, yoyo:true, rotation:15, ease:Linear.easeOut});
 
+/*/////////////////////////////
+------ANIMATION PROFIL-------
+////////////////////////////*/
+   TweenMax.to('#blc-profil',1.5,{scale:1.05, opacity:1});
 });
