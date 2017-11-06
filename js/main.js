@@ -45,7 +45,7 @@ $(function(){
     });
 
     $('#arrow-right-mentions').on('click', function(){
-        TweenMax.to('#blc-mention',1,{right:'-414px'});
+        TweenMax.to('#blc-mention',1,{right:'-445px'});
         TweenMax.to('#mentions',1,{right:'-44px'});
         TweenMax.to('#arrow-right-mentions',1,{opacity:'0'});
         });
