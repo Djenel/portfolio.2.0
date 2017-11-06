@@ -62,5 +62,5 @@ $(function(){
 /*/////////////////////////////
 ------ANIMATION PROFIL-------
 ////////////////////////////*/
-   TweenMax.to('#blc-profil',0.8,{scale:1.05, opacity:1});
+   TweenMax.to('#blc-profil',2,{scale:1.05, opacity:1});
 });
