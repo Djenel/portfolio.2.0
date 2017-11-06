@@ -370,22 +370,28 @@ footer{
 /*/////////////////////////////
 ------------PROFIL-------------
 ////////////////////////////*/
-.blur {
-  margin:0;
-  position: absolute;
-  left:0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-filter: blur(30px);
-  -moz-filter: blur(30px);
-  -o-filter: blur(30px);
-  filter: blur(30px);
-  float:left;
+#profil{height: 100%}
+
+.img-profil{
+    background-image: url(../images/background.jpg);
+    width: 100%;
+    height: 100%;
 }
 
-.text-profil {
-    margin-top: 183px;
+
+.blur {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    filter: blur(30px);
+    float: left;
 }
 
 .bg-profil{
@@ -395,18 +401,26 @@ footer{
 }
 
 #blc-profil {
-    position: absolute;
+    position: relative;
     width: 80%;
     color: #838282;
-    height: 600px;
     top: 50%;
+    transform: translateY(-50%) !important;
+    height: 70%;
     left: 50%;
     margin-left: -40%;
-    margin-top: -300px;
     background-color: rgba(255, 255, 255, 0.52);
     z-index: 100;
     box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
     opacity: 0;
+    overflow: auto;
+}
+
+.ctn-profil{
+    height: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 .btn-cv {
@@ -434,17 +448,9 @@ button{
 
 }
 
-.blc-competences h4 {
-    border-bottom: 1px solid #b9b9b9;
-    width: 460px;
-    padding-bottom: 5px;
-    display: block;
-    margin: 0 50px;
+.text-profil {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-/*/////////////////////////////
------------STRUCTURE----------
-////////////////////////////*/
-
-
 
