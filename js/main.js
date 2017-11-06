@@ -64,3 +64,4 @@ $(function(){
 ////////////////////////////*/
    TweenMax.to('#blc-profil',2,{scale:1.05, opacity:1});
 });
+
