@@ -372,10 +372,16 @@ footer{
 ////////////////////////////*/
 #profil{height: 100%}
 
-.img-profil{
+.img-profil {
     background-image: url(../images/background.jpg);
-    width: 100%;
+    width: 50%;
     height: 100%;
+    right: 0;
+    top: 0;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: fixed;
 }
 
 
@@ -449,8 +455,11 @@ button{
 }
 
 .text-profil {
+    width: 50%;
     position: relative;
+    padding: 0 40px;
     top: 50%;
+    left:0;
     transform: translateY(-50%);
 }
 
