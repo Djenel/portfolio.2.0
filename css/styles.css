@@ -413,7 +413,7 @@ footer{
     top: 50%;
     transform: translateY(-50%) !important;
     height: 70%;
-    left: 50%;
+    left: 60%;
     margin-left: -40%;
     background-color: rgba(255, 255, 255, 0.52);
     z-index: 100;
@@ -462,4 +462,8 @@ button{
     left:0;
     transform: translateY(-50%);
 }
+
+/*/////////////////////////////
+-----------PROJETS-------------
+////////////////////////////*/
 
