@@ -1,3 +1,3 @@
 $(function(){
-    $('main').load('../fr/projet.html');
+    $('main').load('../fr/contact.html');
 });
