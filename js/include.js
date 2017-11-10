@@ -1,3 +1,3 @@
 $(function(){
-    $('main').load('../fr/contact.html');
+    $('main').load('../fr/portfolio.html');
 });

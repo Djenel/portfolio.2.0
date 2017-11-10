@@ -68,6 +68,7 @@ $(function(){
 ------ANIMATION CONTACT-------
 ////////////////////////////*/
    TweenMax.to('#contact h2',1.7,{delay:0.2, left:'50px', opacity:1, easeIn: Power0.easeNone,});
+
    TweenMax.to('#blc-form',1.7,{delay:0.2, right:'50px', opacity:1, easeIn: Power0.easeNone,});
 
     // Test for placeholder support
