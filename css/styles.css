@@ -32,10 +32,6 @@ p{
     text-align: justify
 }
 
-/*/////////////////////////////
------------STRUCTURE----------
-////////////////////////////*/
-
 /*=========NAVIGATION=========*/
 nav{position: fixed; right: 60px; top: 75px; z-index: 200;}
 #menu-responsive {
@@ -251,17 +247,17 @@ li a:focus > .border:after, li a:hover > .border:after{
     padding: 10px 0;
 }
 
+#slide-profil{
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+
 #slide-portfolio{
     border-bottom: 1px solid white;
     padding: 10px 0;
 }
 
 #slide-projets{
-    border-bottom: 1px solid white;
-    padding: 10px 0;
-}
-
-#slide-photographie{
     border-bottom: 1px solid white;
     padding: 10px 0;
 }
@@ -273,15 +269,17 @@ li a:focus > .border:after, li a:hover > .border:after{
 #slide-ctn-accueil{
    opacity: 1;
 }
+
+#slide-ctn-profil{
+   opacity: 0;
+}
 #slide-ctn-portfolio{
    opacity: 0;
 }
 #slide-ctn-projets{
    opacity: 0;
 }
-#slide-ctn-photographie{
-   opacity: 0;
-}
+
 #slide-ctn-contact{
    opacity: 0;
 }
@@ -394,10 +392,10 @@ footer{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    -webkit-filter: blur(50px);
-    -moz-filter: blur(50px);
-    -o-filter: blur(50px);
-    filter: blur(50px);
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    filter: blur(30px);
     float: left;
 }
 
@@ -411,10 +409,10 @@ footer{
     position: relative;
     width: 80%;
     color: #838282;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%) !important;
     height: 70%;
-    left: 60%;
+    left: 50%;
     margin-left: -40%;
     background-color: rgba(255, 255, 255, 0.52);
     z-index: 100;
@@ -485,14 +483,15 @@ button{
 
 .blc-projets {
     width: 100%;
-    height: 220px;
+    height: 350px;
     position: absolute;
-    bottom: 15%;
+    bottom: -50px;
     padding: 0 100px;
-    background-color: #ffffff69;
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     justify-content: space-around;
     box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
+    opacity: 0;
 }
 .title-portfolio{
     width: 50%;
@@ -550,7 +549,7 @@ button{
     position: relative;
     width: 80%;
     color: #838282;
-    top: 50%;
+    top: 45%;
     transform: translateY(-85%) !important;
     height: 500px;
     left: 50%;
@@ -559,6 +558,7 @@ button{
     z-index: 100;
     box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
     overflow: auto;
+    opacity: 0;
 }
 
 .ctn-portfolio{
@@ -614,19 +614,34 @@ button{
     position: relative;
     margin: 0 12px;
     top: 50%;
-    transform: translateY(-50%) !important;
+    transform: translateY(-70%) !important;
     border-radius: 7px;
+    opacity: 0;
     transition: 0.3s;
 }
 
 
 
-.btn-projets:hover, .btn-projets:active, .btn-projets:focus {
+.btn-projets:hover, .btn-projets:focus {
     box-shadow: -0px 8px 30px rgba(0, 0, 0, 0.67);
     -webkit-transform: scale(0.9)!important;
     -moz-transform: scale(0.9)!important;
     -o-transform: scale(0.9)!important;
     transform: scale(1.05)!important;
+    -webkit-transform-origin: bottom !important;
+    -moz-transform-origin: bottom !important;
+    -o-transform-origin: bottom !important;
+    transition: 0.3s;
+    top: 64px !important;
+    cursor: pointer;
+}
+
+.btn-projets:active{
+    box-shadow: -0px 8px 30px rgba(0, 0, 0, 0.67);
+    -webkit-transform: scale(0.9)!important;
+    -moz-transform: scale(0.9)!important;
+    -o-transform: scale(0.9)!important;
+    transform: scale(1.0)!important;
     -webkit-transform-origin: bottom !important;
     -moz-transform-origin: bottom !important;
     -o-transform-origin: bottom !important;
@@ -667,8 +682,118 @@ button{
 }
 
 .ctn-contact{
+    width: 38%;
     height: 100%;
     position: 100%;
+    position: relative;
+    left: 0;
+}
+
+.blc-mask-contact {
+    height: 100%;
+    position: absolute;
+    width: 25%;
+    left: 38%;
+    top: 0;
+    overflow: hidden;
+}
+
+.bg-mac{
+    position: relative;
+    height: 100%;
+    background-image: url(../images/mockup_macbook_contact.jpg);
+    background-size: cover;
+    transform: translate3d(0px, 8px, 70px);
+    opacity: 0.2;
+}
+
+.arrow-right {
+    position: fixed;
+    right: 120px;
+    top: 60px;
+}
+
+
+.blc-info-contact{
+    position: fixed;
+    right: -100px;
+    height: 100%;
+    width: 38%;
+    opacity: 0;
+    top:0;
+}
+
+.info h4 {
+    border-bottom: 2px solid white;
+    width: 360px;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.info h4:hover {
+    width: 380px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.info p {
+    color: white;
+    letter-spacing: 1.8px;
+    line-height: 22px;
+    font-size: 0.95em;
+}
+
+.info {
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
+    margin: 0 auto;
+}
+
+.btn-message {
+    width: 200px;
+    padding: 21px 0;
+    font-size: 0.9em;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #4a4a4a00;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: 0.3s ease-out;
+    float: left;
+}
+
+.btn-message:hover, .btn-message:active, .btn-message:focus {
+    transition: 0.3s ease-out;
+    background-color: white;
+    color: #4a4a4ad9;
+    font-weight: 400;
+}
+
+
+.ctn-contact2 {
+    position: relative;
+    transform: translateY(-50%) !important;
+    top: 50%;
+}
+
+.ctn-contact2 h3 {
+    font-size: 2.5em;
+    letter-spacing: 11px;
+    line-height: 50px;
+    width: 80%;
+    left: 50%;
+    position: relative;
+    margin-left: -40%;
+    margin-bottom: 50px;
 }
 
 #contact h2 {
@@ -690,16 +815,15 @@ button{
 }
 
 #blc-form{
-    height: 55%;
-    top:50%;
-    transform: translateY(-50%) !important;
+    height: 100%;
+    width: 50%;
+    top: 0;
     background-color: white;
-    right: 0;
-    position: relative;
+    right: -860px;
+    opacity: 0;
+    position: absolute;
     box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
     padding: 45px 0;
-    opacity: 0;
-    height: 540px;
 }
 
 textarea {
@@ -736,7 +860,7 @@ textarea {
 }
 .form-control:focus {
     box-shadow: none;
-    border-bottom: 2px solid #8785ca;
+    border-bottom: 1px solid #263398;
 }
 .js-hide-label {
 	opacity: 0;

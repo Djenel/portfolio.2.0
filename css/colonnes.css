@@ -219,6 +219,8 @@ html {
 }
 
 @media (min-width: 576px) {
+  .phone-none{display: none}
+
   .col-phone {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -331,6 +333,7 @@ html {
 }
 
 @media (min-width: 768px) {
+  .tab-none{display: none}
   .col-tab {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -443,6 +446,9 @@ html {
 }
 
 @media (min-width: 992px) {
+
+  .note-none{display: none}
+
   .col-note {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;

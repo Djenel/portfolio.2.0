@@ -62,14 +62,30 @@ $(function(){
 /*/////////////////////////////
 ------ANIMATION PROFIL-------
 ////////////////////////////*/
-   TweenMax.to('#blc-profil',1.7,{delay:0.2, left:'50%', opacity:1, easeIn: Power0.easeNone,});
+   TweenMax.to('#blc-profil',1.7,{delay:0.2, top:'50%', opacity:1, easeIn: Power0.easeNone,});
+
+/*/////////////////////////////
+------ANIMATION PORTFOLIO------
+////////////////////////////*/
+   TweenMax.to('#blc-portfolio',1,{delay:0.2, top:'50%', opacity:1, easeIn: Power0.easeNone,});
+   TweenMax.to('.blc-projets',1,{delay:0.1, bottom:'0', opacity:1, easeIn: Power0.easeNone, onComplete: function(){
+                                                                                                                    TweenMax.to('.btn-projets',0.5,{ opacity:1, easeIn: Power0.easeNone,});
+   }});
 
 /*/////////////////////////////
 ------ANIMATION CONTACT-------
 ////////////////////////////*/
    TweenMax.to('#contact h2',1.7,{delay:0.2, left:'50px', opacity:1, easeIn: Power0.easeNone,});
+   TweenMax.to('.blc-info-contact',1.7,{delay:0.2, right:'0px', opacity:1});
 
-   TweenMax.to('#blc-form',1.7,{delay:0.2, right:'50px', opacity:1, easeIn: Power0.easeNone,});
+    $('.btn-message').on('click', function(){
+        TweenMax.to('#blc-form',1,{opacity:1, right:'0'});
+    });
+
+    $('.arrow-right').on('click', function(){
+        TweenMax.to('#blc-form',1,{opacity:0, right:'-860px'});
+    });
+
 
     // Test for placeholder support
     $.support.placeholder = (function(){
