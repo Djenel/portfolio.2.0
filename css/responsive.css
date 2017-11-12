@@ -1,25 +1,124 @@
 /*/////////////////////////////
------------STRUCTURE----------
+------------PHONE------------
 ////////////////////////////*/
 
-@media screen and (max-width: 768px){
-    .xs-none{display: none;}
-    li a .border:after{
-    border-top: 2px solid black!important;
-    transition: all .15s ease-in-out;
+@media screen and (max-width: 767px), screen and (max-device-width: 767px) {
+    .menu-principal{display: none;}
+    #slide-menu{display: none;}
+    #accueil h3 {
+        font-size: 1em;
+        letter-spacing: 9px;}
+    .line-separator {
+        margin-top: 20px;
+        margin-bottom: -20px;}
+
+
+     #accueil h1 {
+     font-size: 2em;
+     letter-spacing: 0px;
+     font-family: 'Vollkorn', serif;
+     opacity: 0;}
+
+    #blc-profil {
+    width: 90%;
+    top: 40%;
+    transform: translateY(-50%) !important;
+    height: 80%;
+    left: 50%;
+    margin-left: -45%;
 }
 
+    .text-profil {
+    height: 50%!important;
+    width:100%!important;
+    position: absolute!important;
+    padding: 30px 30px!important;
+    bottom: 200px!important;
+    transform: none !important;
+    left: 0;!important}
+
+    .img-profil {
+    width: 100%!important;
+    height: 50%!important;
+    left: 0!important;
+    right: 0!important;
+    top: 0;!important}
+
+    .ctn-contact{display: none;}
+
+    .blc-mask-contact {
+    height: 100%!important;
+    position: absolute!important;
+    width: 100%!important;
+    left: 0!important;
+    top: 0!important;
+    overflow: hidden!important;
+    opacity: 0.3;!important}
+
+    .blc-info-contact {
+    position: fixed;
+    right: 50%!important;
+    height: 100%!important;
+    width: 100%!important;
+    margin-right: -75%;!important
+    top: 0;
 }
 
-@media screen and (min-width: 768px){
-    .sm-none{display: none;}
+    .info {
+    width: 100%!important;
+    top: 50%!important;
+    transform: translateY(-50%)!important;
+    margin-left: -50%;!important}
+
+    .btn-message{display: none}
+}
+
+/*/////////////////////////////
+-----------TABLETTE----------
+////////////////////////////*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .menu-principal{display: none;}
+    #slide-menu{display: none;}
+    #accueil h1 {
+        font-size: 4em;
+        letter-spacing: 5px;}
+    .text-profil {
+    height: 50%!important;
+    width:100%!important;
+    position: absolute!important;
+    padding: 30px 30px!important;
+    bottom: 200px!important;
+    transform: none !important;
+    left: 0;!important}
+
+    .img-profil {
+    width: 100%!important;
+    height: 50%!important;
+    left: 0!important;
+    right: 0px!important;
+    top: 0;!important}
+
+    .info {
+    width: 100%!important;
+    padding: 0!important;
+    right: 70px!important;
+    margin: 0 auto!important;
+}
+
+    .blc-mask-contact {
+    height: 100%!important;
+    position: absolute!important;
+    width: 50%!important;
+    left: 0!important;
+    top: 0!important;
+    overflow: hidden!important;
+    opacity: 0.3;!important}
 
 }
 
-@media screen and (min-width: 992px){
-    .md-none{display: none;}
-}
-
-@media screen and (min-width: 1170px){
-    .lg-none{display: none;}
+/*/////////////////////////////
+-----------NOTEBOOK-----------
+////////////////////////////*/
+@media screen and (min-width:1024px) and (max-width:2000px) {
 }

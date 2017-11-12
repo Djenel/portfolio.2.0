@@ -19,7 +19,7 @@ $(function(){
         TweenMax.to('#menu-responsive',1,{right:'0'});
         TweenMax.to('.line',1,{'background-color': 'black'});
         TweenMax.to('#btn-burger-menu',1.2,{rotation:-90,
-                                            right:'180px'});
+                                            right:'10px'});
 
         closed=false;
 
@@ -67,10 +67,7 @@ $(function(){
 /*/////////////////////////////
 ------ANIMATION PORTFOLIO------
 ////////////////////////////*/
-   TweenMax.to('#blc-portfolio',1,{delay:0.2, top:'50%', opacity:1, easeIn: Power0.easeNone,});
-   TweenMax.to('.blc-projets',1,{delay:0.1, bottom:'0', opacity:1, easeIn: Power0.easeNone, onComplete: function(){
-                                                                                                                    TweenMax.to('.btn-projets',0.5,{ opacity:1, easeIn: Power0.easeNone,});
-   }});
+
 
 /*/////////////////////////////
 ------ANIMATION CONTACT-------
