@@ -62,7 +62,7 @@ $(function(){
 /*/////////////////////////////
 ------ANIMATION PROFIL-------
 ////////////////////////////*/
-   TweenMax.to('#blc-profil',1.7,{delay:0.2, top:'50%', opacity:1, easeIn: Power0.easeNone,});
+   TweenMax.to('#blc-profil',1.7,{delay:0.2, opacity:1, easeIn: Power0.easeNone,});
 
 /*/////////////////////////////
 ------ANIMATION PORTFOLIO------
@@ -73,7 +73,7 @@ $(function(){
 ------ANIMATION CONTACT-------
 ////////////////////////////*/
    TweenMax.to('#contact h2',1.7,{delay:0.2, left:'50px', opacity:1, easeIn: Power0.easeNone,});
-   TweenMax.to('.blc-info-contact',1.7,{delay:0.2, right:'0px', opacity:1});
+   TweenMax.to('.blc-info-contact',1.7,{delay:0.2, opacity:1});
 
     $('.btn-message').on('click', function(){
         TweenMax.to('#blc-form',1,{opacity:1, right:'0'});

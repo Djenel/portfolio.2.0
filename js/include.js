@@ -1,5 +1,5 @@
 $(function(){
-    $('main').load('../fr/profil.html');
+    $('main').load('../fr/contact.html');
 
     $('.menuAccueil').on('click',function(){
                 TweenMax.to('main',0.2,{
@@ -82,6 +82,61 @@ $(function(){
                                               TweenMax.to('#slide-ctn-profil',0.1,{opacity:0});
                                               TweenMax.to('#slide-ctn-portfolio',0.1,{opacity:0});
                                               TweenMax.to('#slide-ctn-contact',0.1,{opacity:1});
+                                          });
+                                       }
+                                });
+                            });
+
+
+
+
+
+
+   /*/////////////////////////////
+------NAVIGATION RESPONSIVE-------
+////////////////////////////*/
+
+
+
+    $('.burger-menuAccueil').on('click',function(){
+                TweenMax.to('main',0.2,{
+                                        opacity:0.1,
+                                        onComplete: function(){
+                                          $('main').load('../fr/accueil.html', function(){
+                                              TweenMax.to('main',0.1,{opacity:1,scale:'1'});
+                                          });
+                                       }
+                                });
+                            });
+
+    $('.burger-menuProfil').on('click',function(){
+                TweenMax.to('main',0.2,{
+                                        opacity:0.1,
+                                        onComplete: function(){
+                                          $('main').load('../fr/profil.html', function(){
+                                              TweenMax.to('main',1,{opacity:1,scale:'1'});
+                                          });
+                                       }
+                                });
+                            });
+
+    $('.burger-menuPortfolio').on('click',function(){
+                TweenMax.to('main',0.2,{
+                                        opacity:0.1,
+                                        onComplete: function(){
+                                          $('main').load('../fr/portfolio.html', function(){
+                                              TweenMax.to('main',1,{opacity:1,scale:'1'});
+                                          });
+                                       }
+                                });
+                            });
+
+    $('.burger-menuContact').on('click',function(){
+                TweenMax.to('main',0.2,{scale:'1.1',
+                                        opacity:0.1,
+                                        onComplete: function(){
+                                          $('main').load('../fr/contact.html', function(){
+                                              TweenMax.to('main',1,{opacity:1,scale:'1'});
                                           });
                                        }
                                 });

@@ -409,7 +409,7 @@ footer{
     position: relative;
     width: 80%;
     color: #838282;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%) !important;
     height: 70%;
     left: 50%;
@@ -686,7 +686,7 @@ button{
 
 .blc-info-contact{
     position: fixed;
-    right: -100px;
+    right: 0;
     height: 100%;
     width: 38%;
     opacity: 0;
