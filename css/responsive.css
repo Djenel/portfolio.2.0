@@ -28,6 +28,19 @@
     .line-separator {
         margin-top: 20px;
         margin-bottom: -20px;}
+    .info h4 {
+    border-bottom: 2px solid white;
+    width: 360px;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    color: white;
+    letter-spacing: 3px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.2s;
+}
 
 
      #accueil h1 {
@@ -129,19 +142,23 @@
 -----------TABLETTE----------
 ////////////////////////////*/
 
-@media screen and (min-width:768px) , screen and (max-device-width: 1024px) {
-    .menu-principal{display: none;}
+@media screen and (min-width:768px){
+
+    .ul.menu-principal.menu{display: none; !important}
+
     #slide-menu{display: none;}
+
     #accueil h1 {
         font-size: 4em;
         letter-spacing: 5px;}
+
     .text-profil {
     height: 50%!important;
     width:100%!important;
     position: absolute!important;
     bottom: 200px!important;
     transform: none !important;
-    left: 0;!important}
+    left: !important0;}
 
     .img-profil {
     width: 100%!important;
@@ -208,4 +225,13 @@
 ////////////////////////////*/
 @media screen and (min-width:1025px){
     #btn-burger-menu{display: none;}
+    #menu-responsive{display: none!important;}
+    .info {
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
+    margin: 0 !important;
+    left: 10% !important;
+}
 }

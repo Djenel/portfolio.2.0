@@ -431,40 +431,37 @@ footer{
 .btn-cv {
     width: 200px;
     padding: 21px 0;
+    padding-top: 21px;
+    padding-right: 0px;
+    padding-bottom: 21px;
+    padding-left: 0px;
     font-size: 0.9em;
     margin: 20px 0;
     border-radius: 5px;
-    background-color: #4a4a4ad9;
+    color: white;
+    background-color: #565656;
     border: 0px;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
-.btn-cv:hover, .btn-cv:active, .btn-cv:focus {
+.btn-cv:hover, .btn-cv:active {
     box-shadow: 1px 8px 19px rgba(95, 95, 95, 0.87);
     transition: 0.3s ease-out;
     background-color: white;
-    color: #4a4a4ad9;
+    color: black;
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
     -o-transform: scale(1.02);
     transform: scale(1.02);
-    -webkit-transform-origin: top ;
-    -moz-transform-origin: top ;
-    -o-transform-origin: top ;
-    transform-origin: top ;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
     font-weight: 400;
 }
 
 
-button{
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.4em;
-    font-weight: lighter;
-
-}
 
 .text-profil h2{color: #4a4a4a; }
 
@@ -726,18 +723,20 @@ button{
     font-size: 0.9em;
     margin: 20px 0;
     border-radius: 5px;
-    background-color: #4a4a4a00;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
     cursor: pointer;
+    color: white;
     margin-top: 40px;
     transition: 0.3s ease-out;
     float: left;
+    letter-spacing: 2px;
 }
 
 .btn-message:hover, .btn-message:active, .btn-message:focus {
     transition: 0.3s ease-out;
     background-color: white;
-    color: #4a4a4ad9;
+    color: black;
     font-weight: 400;
 }
 
