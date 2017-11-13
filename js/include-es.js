@@ -1,11 +1,11 @@
 $(function(){
-    $('main').load('../fr/contact.html');
+    $('main').load('../fr/accueil.html');
 
     $('.menuAccueil').on('click',function(){
-                TweenMax.to('main',0.2,{
+                TweenMax.to('main',0.2,{scale:'0.9',
                                         opacity:0.1,
                                         onComplete: function(){
-                                          $('main').load('../fr/accueil.html', function(){
+                                          $('main').load('../es/accueil.html', function(){
                                               TweenMax.to('main',0.1,{opacity:1,scale:'1'});
                                               TweenMax.to('li a',0.1,{color:'white'});
                                               TweenLite.to($('li a .border:after'), 0.1, {css:{borderBottomColor:"white"}});
@@ -23,10 +23,10 @@ $(function(){
                             });
 
     $('.menuProfil').on('click',function(){
-                TweenMax.to('main',0.2,{
+                TweenMax.to('main',0.2,{scale:'0.9',
                                         opacity:0.1,
                                         onComplete: function(){
-                                          $('main').load('../fr/profil.html', function(){
+                                          $('main').load('../es/profil.html', function(){
                                               TweenMax.to('main',1,{opacity:1,scale:'1'});
                                               TweenMax.to('li a',1,{color:'rgba(74, 74, 74, 0.8392156862745098)'});
                                               TweenLite.to($('#slide-accueil'), 0.1, {css:{borderBottom:"solid 1px rgba(74, 74, 74, 0.8392156862745098)"}});
@@ -48,10 +48,10 @@ $(function(){
                             });
 
     $('.menuPortfolio').on('click',function(){
-                TweenMax.to('main',0.2,{
+                TweenMax.to('main',0.2,{scale:'0.9',
                                         opacity:0.1,
                                         onComplete: function(){
-                                          $('main').load('../fr/portfolio.html', function(){
+                                          $('main').load('../es/portfolio.html', function(){
                                               TweenMax.to('main',1,{opacity:1,scale:'1'});
                                               TweenMax.to('li a',1,{color:'white'});
                                               TweenLite.to($('#slide-accueil'), 0.1, {css:{borderBottom:"solid 1px white"}});
@@ -68,10 +68,10 @@ $(function(){
                             });
 
     $('.menuContact').on('click',function(){
-                TweenMax.to('main',0.2,{scale:'1.1',
+                TweenMax.to('main',0.2,{scale:'0.9',
                                         opacity:0.1,
                                         onComplete: function(){
-                                          $('main').load('../fr/contact.html', function(){
+                                          $('main').load('../es/contact.html', function(){
                                               TweenMax.to('main',1,{opacity:1,scale:'1'});
                                               TweenMax.to('li a',1,{color:'white'});
                                               TweenLite.to($('#slide-accueil'), 0.1, {css:{borderBottom:"solid 1px white"}});
@@ -92,7 +92,7 @@ $(function(){
 
 
 
-   /*/////////////////////////////
+/*/////////////////////////////
 ------NAVIGATION RESPONSIVE-------
 ////////////////////////////*/
 

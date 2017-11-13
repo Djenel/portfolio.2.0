@@ -67,8 +67,29 @@ $(function(){
 /*/////////////////////////////
 ------ANIMATION PORTFOLIO------
 ////////////////////////////*/
+$(".btn-delahaye").hover(function(){
+        $("#portfolio").css("background-image", "url(../images/mockup-delahaye.jpg)");
+        }, function(){
+        $("#portfolio").css("background-image", "url(../images/mockup-delahaye.jpg)");
+    });
 
+$(".btn-jmm").hover(function(){
+        $("#portfolio").css("background-image", "url(../images/projet-jmm.jpg)");
+        }, function(){
+        $("#portfolio").css("background-image", "url(../images/projet-jmm.jpg)");
+    });
 
+$(".btn-riva").hover(function(){
+        $("#portfolio").css("background-image", "url(../images/projet-riva.jpg)");
+        }, function(){
+        $("#portfolio").css("background-image", "url(../images/projet-riva.jpg)");
+    });
+
+$(".btn-generix").hover(function(){
+        $("#portfolio").css("background-image", "url(../images/projet-generix.jpg)");
+        }, function(){
+        $("#portfolio").css("background-image", "url(../images/projet-generix.jpg)");
+    });
 /*/////////////////////////////
 ------ANIMATION CONTACT-------
 ////////////////////////////*/
@@ -125,6 +146,7 @@ $(function(){
             }
         });
     }
+
 
 
 

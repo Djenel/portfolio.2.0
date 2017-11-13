@@ -410,7 +410,7 @@ footer{
     width: 80%;
     color: #838282;
     top: 50%;
-    transform: translateY(-50%) !important;
+    transform: translateY(-50%);
     height: 70%;
     left: 50%;
     margin-left: -40%;
@@ -471,7 +471,7 @@ button{
 .text-profil {
     width: 50%;
     position: relative;
-    padding: 0 125px;
+    padding: 0 80px;
     top: 50%;
     left:0;
     transform: translateY(-50%);
@@ -492,20 +492,21 @@ button{
     box-shadow: -2px 8px 65px rgba(0, 0, 0, 0.52);
 }
 
-.blc-projets {
-    width: 100%;
-    bottom: 150px;
-    display: flex;
-    justify-content: space-around;
-    /* height: 470px; */
+
+.blc-projet {
+    top: 50%;
+    right: 5%;
     position: absolute;
+    transform: translateY(-50%);
 }
 
 #portfolio{
     height: 100%;
-    background-image: url(../images/gradient-portfolio.jpg) ;
+    background-image: url(../images/projet-jl.jpg) ;
     background-repeat: no-repeat;
-    background-size: cover
+    background-position-x: center;
+    background-size: cover;
+    transition: 0.5s;
 
 }
 
@@ -539,14 +540,6 @@ button{
     position: absolute;
 }
 
-.banner-delahaye {
-    background-image: url(../images/banner-delahaye.jpg);
-    /* height: 100%; */
-    width: 100%;
-    position: relative;
-    top: 130px;
-    /* background-size: cover; */
-}
 
 .ctn-portfolio{
     height: 100%;
@@ -589,7 +582,7 @@ button{
     height: 140px;
     width: 290px;
     position: relative;
-    margin: 0 12px;
+    margin: 20px 0;
     top: 50%;
     border-radius: 7px;
     transition: 0.3s;
@@ -773,7 +766,7 @@ button{
     transform: translateY(-50%) !important;
     position: relative;
     top: 50%;
-    left: 0;
+    left: 19px!important;
     line-height: 50px;
     letter-spacing: 11px;
     opacity: 0;

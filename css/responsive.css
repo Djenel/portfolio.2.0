@@ -9,7 +9,9 @@
         top: 0!important;
         bottom: 0;!important}
 
-    .menu-principal{display: none;}
+
+
+    .menu-principal{display: none!important;}
 
     .line-rs{display: none;}
 
@@ -37,9 +39,10 @@
     #blc-profil {
     position: absolute!important;
     width: 100%!important;
-    top: 380px!important;
+    top: 0!important;
     height: 100%!important;
     left: 0!important;
+    transform: translateY(0%) !important;
     margin-left: 0!important;
     overflow: scroll!important;}
 
@@ -87,6 +90,37 @@
     }
     .btn-message {display: none!important}
     .blc-form{display: none!important}
+    #portfolio{
+    background-image: url(../images/gradient-portfolio.jpg)!important;
+    }
+    .btn-projets {
+    height: 90px!important;
+    width: 260px!important;
+    left: 50%!important;
+    margin-left: -130px!important;
+    position: relative;
+    margin-top: 10px;
+    bottom: 20px;}
+
+    .blc-projet {
+    top: 64%;
+    right: 0!important;
+    width: 100%!important;}
+
+    .btn-delahaye {
+    padding: 7px 29px!important;}
+
+    .btn-jmm {
+    padding: 9px 32px!important;}
+
+    .btn-riva {
+    padding: 6px 32px!important;}
+
+    .btn-generix {
+    padding: 7px 39px!important;
+}
+
+}
 
 }
 
@@ -95,7 +129,7 @@
 -----------TABLETTE----------
 ////////////////////////////*/
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) , screen and (max-device-width: 1024px) {
     .menu-principal{display: none;}
     #slide-menu{display: none;}
     #accueil h1 {
@@ -105,7 +139,6 @@
     height: 50%!important;
     width:100%!important;
     position: absolute!important;
-    padding: 30px 30px!important;
     bottom: 200px!important;
     transform: none !important;
     left: 0;!important}
@@ -115,13 +148,11 @@
     height: 50%!important;
     left: 0!important;
     right: 0px!important;
-    top: 0;!important}
+    top: 0!important;}
 
     .blc-info-contact {
     right: 70px!important;
     }
-
-
 
     .info {
     width: 50%;
@@ -130,7 +161,6 @@
     left: 50%;
     margin-left: -35%;
     transform: translateY(-75%);
-    /* margin: 0 auto; */
 }
 
     .blc-mask-contact {
@@ -140,13 +170,42 @@
     left: 0!important;
     top: 0!important;
     overflow: hidden!important;
-    opacity: 0.3;!important}
+    opacity: 0.3;!important;}
+
+    .text-profil {
+    padding: 0px 31px!important;}
+
+    #portfolio{
+    background-image: url(../images/gradient-portfolio.jpg)!important;}
+
+    .btn-projets {
+    height: 90px!important;
+    width: 260px!important;
+    left: 50%!important;
+    margin-left: -130px!important;}
+
+    .blc-projet {
+    top: 64%;
+    right: 0!important;
+    width: 100%!important;}
+
+    .btn-delahaye {
+    padding: 7px 29px!important;}
+
+    .btn-jmm {
+    padding: 9px 32px!important;}
+
+    .btn-riva {
+    padding: 6px 32px!important;}
+
+    .btn-generix {
+    padding: 7px 39px!important;}
 
 }
 
 /*/////////////////////////////
 -----------NOTEBOOK-----------
 ////////////////////////////*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
     #btn-burger-menu{display: none;}
 }
