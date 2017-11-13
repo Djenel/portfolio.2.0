@@ -1,6 +1,18 @@
 $(function(){
     $('main').load('../fr/accueil.html');
 
+    $('#logo').on('click',function(){
+                TweenMax.to('main',0.2,{scale:'0.9',
+                                        opacity:0.1,
+                                        onComplete: function(){
+                                          $('main').load('../fr/accueil.html', function(){
+                                              TweenMax.to('main',0.1,{opacity:1,scale:'1'});
+
+                                          });
+                                       }
+                                });
+                            });
+
     $('.menuAccueil').on('click',function(){
                 TweenMax.to('main',0.2,{scale:'0.9',
                                         opacity:0.1,
